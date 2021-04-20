@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <head></head>
+
+    <body>
+        <button id="myBtn">Click Me</button>
+        <button onclick = "this.innerHTML='unclicked'">Click here</button>
+        <button onclick="this.innerHTML = Date()">Clock</button>
+        
+        <p id="p1"></p>
+        <h2 id = "h3">Checking if mousover and mouseout works</h2>
+        <h3 id = "h4">What's the talles mountain in the world?</h3>
+        
+        
+        Enter your credentials: <input type="text" id = "fname">
+
+
+        <script>
+            document.getElementById("myBtn").addEventListener("click", function(){
+                document.getElementById("p1").innerHTML = "Hello there!!";
+            })
+                document.getElementById("fname").addEventListener("change", myFunction);
+            
+            function myFunction(){
+                var x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+                x.value = x.value.style.color = "blue";
+                x.style.backgroundColor = "blue";
+            }
+            document.getElementById("h3").addEventListener("mouseover", mouseOver); 
+            document.getElementById("h3").addEventListener("mouseout", mouseOut);
+            
+            
+            
+            function mouseOver(){
+                document.getElementById("h3").style.color = "red";
+            }
+            function mouseOut(){
+                document.getElementById("h3").style.color = "blue";
+            }
+        </script>
+    </body>
+</html>

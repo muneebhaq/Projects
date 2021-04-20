@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+
+    <head>
+        <h1>Creating DOM elements</h1>
+    </head>
+    <body>
+
+        <div id = "div">
+
+        </div>
+
+        
+        
+        <script>
+            //Accesing div and creating a new p tag and adding content to it.
+            var myDiv = document.getElementById("div");
+            var para = document.createElement("p");
+            var node = document.createTextparaContent("Adding a para using DOM");
+            para.append(node);
+
+            //
+            var strong = document.createElement("strong");
+            node = document.createTextNode("A strong text");
+
+            strong.appendChild(node);
+            myDiv.append(para, strong);
+        </script>
+
+    </body>
+</html>

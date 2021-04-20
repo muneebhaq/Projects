@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <head>
+        <script src = "Functions.js"></script>
+    </head>
+    <body>
+
+        <p id="para1"></p>
+        <p id="para2"></p>
+        <p id="para3"></p>
+        <p id="para4"></p>
+        <p id="para5"></p>
+        <p id="para6"></p>
+        
+        <script>
+            document.getElementById("para1").innerHTML= printMessage();
+            
+            let sum = findSum();
+            document.getElementById("para2").innerHTML="The sum of two numbers is "+sum;
+            
+            let product = findProduct();
+            document.getElementById("para3").innerHTML="the product of two numbers is "+ product;
+            
+            let product2 = findProduct2(4,5);
+            document.getElementById("para4").innerHTML="The product is " + product2;
+
+            let num = evenorodd(14);
+            //document.getElementById("para5").innerHTML= "The number is " + num;
+
+            setTimeOut(myFunction, 3000);
+            function myFunction() {
+                document.getElementById("para5").innerHTML="The number is " + num;
+            }
+            
+            
+            
+            let argument = num(4,2,3,4)
+            document.getElementById("para6").innerHTML="How many paramters "+ num;
+            
+            //setTimeOut(myFunction, 3000);
+            //function myFunction() {
+                //document.getElementById("para6").innerHTML="How many paramters "+ num;
+            //}
+            
+        </script>
+    </body>
+</html>

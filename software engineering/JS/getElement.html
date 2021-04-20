@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+    <title></title>
+    <head></head>
+    <body>
+        <p id = "para1">My first paragraph</p>
+        <p id = "para2">My Second paragraph</p>
+        <p id = "para3">HI!!</p>
+            <div class="objects"></div>
+            <div class="objects"></div>
+            <div class="objects"></div>
+
+    <script>
+        document.getElementById("para1").innerHTML = "My first paragraph just got DOMMED"
+        document.getElementById("para2").textContent =  "My Second paragraph. My second para after changing it."
+        let divClass = document.getElementsByClass("objects")
+        let lastElement = divClass[2].innerHTML
+        document.getElementById("para3").innerHTML = lastElement
+        
+
+    </script>
+    </body>
+</html>

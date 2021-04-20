@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .road {
+            width: 100%;
+            height: 100%;
+            background-color: whitesmoke;
+            position:absolute;
+
+
+        }
+        .toad { 
+        position:absolute;
+        top: 40px;
+        left: 0px;
+        animation-name: drive;
+        animation-duration: 5s;
+        animation-fill-mode: forwards, backwards, forwards;
+        width: 100px;
+        height: 100px;
+
+        }
+
+        @keyframes drive {
+            from {
+
+                transform: translatex(50px)
+            }
+            to {
+               transform: translateX(200px)
+            }
+            
+            from {
+
+                transform: translatex(200px)
+            }
+            to {
+                transform: translateX(50px)
+            }
+            
+            from{
+                transform: translatex(50px)
+            }
+            
+            to {
+                transform: translateX(1000px)
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="road">
+        <img class="toad" src="images/sonic.png">
+
+
+    </div>
+    
+    
+</body>
+</html>

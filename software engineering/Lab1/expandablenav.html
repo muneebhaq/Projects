@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+<style>
+    
+    ul{
+        width: 800px;
+        height: 300px;
+        background-color: white;
+        border-style: solid;
+        position:absolute;
+        display:flex;
+        flex-wrap: wrap;
+        flex-grow: 3;
+        top: 100px;
+        left: 100px;
+        animation-name: ul;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        justify-content: space-between;
+        align-self: flex-start 0px;
+        align-self: flex-end 100px;
+        flex-direction: row;
+        animation-iteration-count: unset;
+        
+    }
+
+
+    @keyframes ul {
+            from {
+    
+                
+                height: 0px;
+                width: 0px;
+            }
+            to {
+                
+                height: 20px;
+                width:100vw;
+            }
+    }
+
+</style>
+</head>
+<body>
+                <ul>
+                <li> -- Home </li>
+                <li> -- About </li>
+                <li> -- Contact</li>
+                <li> -- Faq </li>
+                </ul>
+</body>
+
+</html>

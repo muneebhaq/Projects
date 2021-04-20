@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <head></head>
+    <body>
+        <p id = "p1"></p>
+        <p id = "p2"></p>
+
+
+        <script>
+    var text = "<ul>";
+        const COMPANY = "<ul>" + "Software Engineering RTT 06"  + "<ul>";
+            //var idnum = 0;//Declared globally
+
+        class Student {
+        static count= 0;
+        constructor(firstName, lastName, address, phone){
+                //this.is = ++id
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.address = address;
+                this.phone = phone;
+                
+            } // closing constructor
+
+        static countStudents()
+        {
+            Student.count++
+        }
+        
+        getStudentInfo()
+        {   
+            text = text + "<li>" + this.firstName + " " + this.lastName + " " + this.address + " " + this.phone + "</li>";
+        }
+
+
+        displayStudents()
+        {
+            let fullName = this.firstName + this.lastName;
+            text = text + "<li>" + fullName + "</li>";
+            text = text2 + "<li>" + fullName + "</li>"
+            
+        }
+
+        calculateAverage (a,b,c)
+        {
+            let calculateAverage = (a + b + c) / 3;
+            this.calculateAverage = calculateAverage;
+            text = text +"<li>" + calculateAverage + "</li>"; 
+        }
+    }
+
+        
+        
+        
+        
+        const stu1 = new Student ("John", " Jacob", " 123 main st", " 212-123-4567");
+        stu1.getStudentInfo();
+        //stu1.displayStudents();
+        stu1.calculateAverage(70,90,65);
+
+        const stu2 = new Student ("Mary", "Anne", "123 Brown st", "212-123-4321");
+        stu2.getStudentInfo();
+        stu2.text2=stu2;
+        //stu1.displayStudents();
+        stu1.calculateAverage(60,50,65);
+        
+
+        /*const stu3 = new Student ("jon", "jacob", "123 main st", "212-123-4567");
+        stu1.getStudentInfo();
+        stu1.displayStudents();
+        stu1.calculateAverage(70,90,65);
+
+        const stu4 = new Student ("jon", "jacob", "123 main st", "212-123-4567");
+        stu1.getStudentInfo();
+        stu1.displayStudents();
+        stu1.calculateAverage(70,90,65);*/
+
+        
+        text = text + "</ul>";
+        document.getElementById("p1").innerHTML = text;
+        document.getElementById("p2").innerHTML = text2;
+        
+
+
+        </script>
+    </body>
+</html>
