@@ -1,13 +1,8 @@
-/*
 
 
-7. Write a function findLongestWord that takes an array of words and returns the length of the longest one.
-8. Write a function filterLongWords that takes an array of words and a number i and returns the array of words that are longer than i characters long.*/
-
-//1. Define a function maxOfTwoNumbers that takes two numbers as 
-//arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
-// Do some googling to figure this out if you forget how conditionals work.
-/*maxOfTwoNumbers(142,234);
+//1. Define a function maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
+//Do some googling to figure this out if you forget how conditionals work.
+//maxOfTwoNumbers(142,234);
 function maxOfTwoNumbers(num1, num2){
   
     if (num1 > num2) {
@@ -100,16 +95,19 @@ function reverse(string) {
 }
 
 console.log(reverse('jag testar'));
-*/
-function findLongestWord(str) {
-    var strSplit = str.split(' ');
-    var longestWord = 0;
-    for(var i = 0; i < strSplit.length; i++){
-        if(strSplit[i].length > longestWord){
-            longestWord = strSplit[i].length;
+
+
+function longestWord(string) {
+    var str = string.split(" ");
+    var longest = 0;
+    var word;
+    str.forEach(function(str) {
+        if (longest < str.length) {
+            longest = str.length;
+            word = str;
         }
-    }
-    return longestWord;
+    });
+    return word;
 }
-findLongestWord("The quick brown fox jumped over the lazy dog");
-console.log(findLongestWord(str));
+console.log(longestWord("If you tell the truth, you don't have to remember anything - Mark Twain"));
+
