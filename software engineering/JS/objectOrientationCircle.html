@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <head></head>
+    <body>
+        <h1>Calculation</h1>
+        <p id = "circle"></p>
+        <p id = "rectangle"></id>
+        <p id = "square"></p>
+
+        <script>
+            var cirtext = " ";
+                const CIRCLECALC = "<ul>" + "Software Engineering RTT 06"  + "<ul>";
+
+                    class Circle{
+                        constructor(radius){
+                            this.radius = radius
+                        }//closing constructor
+
+                        circle_area(){
+                            let area = Math.PI * (Math.pow(34,2))
+                            cirtext = cirtext + "Area of the Cirle is:" + " " + area + "<br>";
+                        }
+
+                        total_sides(){
+                            let perimeter = Math.PI * (Math.pow(34,2))
+                            cirtext = cirtext + " Perimeter of the Circle is:" + " " + perimeter;
+                        }
+                    }
+                    var rectext = " ";
+                    class Rectangle{
+                        constructor(length, width){
+                            this.length = length
+                            this.width = width
+                        }//closing constructor
+
+                        rectangle_area(){
+                            let area = this.length * this.width
+                            rectext = rectext + "Area of the Rectangle is:" + " " + area + "<br>";
+                        }
+
+                        rectangle_sides(){
+                            let perimeter = (this.length + this.width) * 2
+                            rectext = rectext + " Perimeter of the Rectangle is:" + " " + perimeter;
+                        }
+                    }
+                    
+                    var sqtext = " ";
+                    class Square{
+                        constructor(side){
+                            this.side = side
+                        }//closing constructor
+
+                        square_area(){
+                            let area = this.side * this.side
+                            sqtext = sqtext + "Area of the Square is:" + " " + area + "<br>";
+                        }
+
+                        square_sides(){
+                            let perimeter = 4 * this.side
+                            sqtext = sqtext + " Perimeter of the Square is:" + " " + perimeter;
+                        }
+                    }
+
+                    const circle1 = new Circle(34)
+                    console.log()
+                    circle1.circle_area();
+                    console.log()
+                    circle1.total_sides();
+
+                    document.getElementById("circle").innerHTML = cirtext
+                    
+                    const rec1 = new Rectangle(5,7)
+                    rec1.rectangle_area();
+                    rec1.rectangle_sides();
+                    document.getElementById("rectangle").innerHTML = rectext
+
+                    const sq1 = new Square(5)
+                    sq1.square_area();
+                    sq1.square_sides();
+                    document.getElementById("square").innerHTML = sqtext
+        </script>
+        </div>
+
+    </body>
+</html>
