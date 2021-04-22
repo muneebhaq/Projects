@@ -10,16 +10,27 @@
         <script>
     var text = "<ul>";
         const COMPANY = "<ul>" + "Software Engineering RTT 06"  + "<ul>";
-            //var idnum = 0;//Declared globally
+            var idnum = 0;//Declared globally
+            
+            
+        class Major{
+            constructor(major){
+            this.major = major;
+            }
 
-        class Student {
+            show(){
+                return this.major
+            }
+        }
+        class Student extends Major {
         static count= 0;
-        constructor(firstName, lastName, address, phone){
-                //this.is = ++id
-                this.firstName = firstName;
+        constructor(firstName, lastName, address, phone,major){   
+            super(major)    
+            this.firstName = firstName;
                 this.lastName = lastName;
                 this.address = address;
                 this.phone = phone;
+                this.id = ++idnum;
                 
             } // closing constructor
 
@@ -28,19 +39,16 @@
             Student.count++
         }
         
+        getStudentId()
+        {
+            text = text +"<li"> + this.id + "</li>"
+        }
+        
         getStudentInfo()
         {   
-            text = text + "<li>" + this.firstName + " " + this.lastName + " " + this.address + " " + this.phone + "</li>";
+            text = text + "<li>" + this.id + this.firstName + " " + this.lastName + " " + this.address + " " + this.phone + this.major + "</li>";
         }
 
-
-        displayStudents()
-        {
-            let fullName = this.firstName + this.lastName;
-            text = text + "<li>" + fullName + "</li>";
-            text = text2 + "<li>" + fullName + "</li>"
-            
-        }
 
         calculateAverage (a,b,c)
         {
@@ -48,38 +56,39 @@
             this.calculateAverage = calculateAverage;
             text = text +"<li>" + calculateAverage + "</li>"; 
         }
-    }
+        }
 
         
         
         
         
-        const stu1 = new Student ("John", " Jacob", " 123 main st", " 212-123-4567");
+        const stu1 = new Student (" John", " Jacob", " 123 main st", " 212-123-4567", " Science");
         stu1.getStudentInfo();
-        //stu1.displayStudents();
         stu1.calculateAverage(70,90,65);
+        Student.countStudents();
 
-        const stu2 = new Student ("Mary", "Anne", "123 Brown st", "212-123-4321");
+
+        const stu2 = new Student (" Mary", "Anne", "123 Brown st", "212-123-4321","Liberal aerts");
         stu2.getStudentInfo();
-        stu2.text2=stu2;
-        //stu1.displayStudents();
-        stu1.calculateAverage(60,50,65);
+        stu2.calculateAverage(60,50,65);
+        Student.countStudents();
         
 
-        /*const stu3 = new Student ("jon", "jacob", "123 main st", "212-123-4567");
-        stu1.getStudentInfo();
-        stu1.displayStudents();
-        stu1.calculateAverage(70,90,65);
+        const stu3 = new Student (" Andrew", "Johnson", "123 main st", "212-123-4567");
+        stu3.getStudentInfo();
+        stu3.calculateAverage(70,90,65);
+        Student.countStudents();
 
-        const stu4 = new Student ("jon", "jacob", "123 main st", "212-123-4567");
-        stu1.getStudentInfo();
-        stu1.displayStudents();
-        stu1.calculateAverage(70,90,65);*/
+
+        const stu4 = new Student (" Levi", "Lanster", "123 main st", "212-123-4567");
+        stu4.getStudentInfo();
+        stu4.calculateAverage(70,90,65);
+        Student.countStudents();
 
         
         text = text + "</ul>";
         document.getElementById("p1").innerHTML = text;
-        document.getElementById("p2").innerHTML = text2;
+        document.getElementById("p2").innerHTML = "Total number of employees working in this company are " + Student.count;
         
 
 
