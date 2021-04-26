@@ -1,0 +1,103 @@
+body, html {
+height: 100%;
+margin: 0;
+}
+.gridparent{
+    width:100vw;
+    height:100vw;
+    display:grid;
+    grid-template-columns: repeat(3, ifr);
+    grid-template-rows:50 px ifr ifr 100px;
+    gap: 0px;
+    padding:10px;
+    box-sizing:border-round;
+    border-style: solid;
+    background-image: url("https://unsplash.com/photos/bR_-gllg7Bs");
+    }
+    .background {
+    background-image: url("https://unsplash.com/photos/bR_-gllg7Bs");
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .circle1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius:50%;
+        background-color:green;
+
+    }
+
+    .circle2{
+        grid-column-start: 2;
+        grid-column-end:3;
+        grid-row-start: 1;
+        grid-row-end:1;
+        border-radius:50%;
+        background-color: green;
+    }
+
+    .circle3{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        border-radius:50%;
+        background-color: green;
+    }
+
+    .circle4{
+        grid-row-start: 2;
+        grid-row-end:2;
+        grid-column-start:1;
+        grid-column-end:2;
+        border-radius:50%;
+        background-color:green;
+    }
+
+    .circle5{
+        grid-column-start: 2;
+        grid-column-end:3;
+        grid-row-start: 2;
+        grid-row-end:2;
+        border-radius:50%;
+        background-color: green;
+
+    }
+    .circle6{
+        grid-column-start: 3;
+        grid-column-end:4;
+        grid-row-start: 2;
+        grid-row-end:2;
+        border-radius:50%;
+        background-color: green;
+
+    }
+    .circle7{
+        grid-column-start: 1;
+        grid-column-end:2;
+        grid-row-start: 3;
+        grid-row-end:3;
+        border-radius:50%;
+        background-color: green;
+
+    }
+    .circle8{
+        grid-column-start: 2;
+        grid-column-end:3;
+        grid-row-start: 3;
+        grid-row-end:3;
+        border-radius:50%;
+        background-color: green;
+
+    }
+    .circle9{
+        grid-column-start: 3;
+        grid-column-end:4;
+        grid-row-start: 3;
+        grid-row-end:3;
+        border-radius:50%;
+        background-color: green;
+
+    }
