@@ -1,0 +1,53 @@
+head{
+    text-decoration: underline;
+    text-shadow: blue;
+}
+body {
+    font-family: "Arial", sans-serif;
+    background-image: url(https://s.yimg.com/aah/yhst-19023546525198/rubbabu-tic-tac-toe-natural-rubber-foam-soft-active-toy-game-15.gif);
+}
+
+section {
+    text-align: center;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+    background-color: white;
+    
+}
+
+.box {
+    font-family:fantasy;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid red;
+    cursor:auto;
+    color:red;
+
+    line-height: 100px;
+    font-size: 60px;
+}
+button{
+    color: red;
+    
+}
+winningMessage{
+    color: red;
+}
+
+.game--title{
+    font-style: italic;
+    font-size: xx-large;
+    color: blue;
+}
+
+.game--status{
+    font-style: italic;
+    color: blue;
+    font-size:xx-large
+}
