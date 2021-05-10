@@ -1,0 +1,99 @@
+.touchApp {
+    margin:20px;
+  }
+  
+  .Dashboard {
+    display: grid;
+    border-radius: 5px;
+    padding: 20px;
+    color: rgb(3, 3, 3);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "Sidebar Reviews AverageRating SentimentAnalysis"
+      "Sidebar WebsiteVisitors WebsiteVisitors WebsiteVisitors"
+      "Sidebar WebsiteVisitors WebsiteVisitors WebsiteVisitors";
+    
+  }
+
+  .MenuBar { 
+    grid-area: Sidebar;
+    background-color:aquamarine;
+    display: flex;
+    margin: 10px;
+    justify-content:space-around;
+    align-items: center;
+    border-style: solid;
+    
+  }
+.Reviews{
+    grid-area: Reviews;
+    background-color:blanchedalmond;
+    margin: 10px;
+    opacity: 0.80;
+    padding-left: 15px;
+    color:black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 250;
+    border-style:solid;
+
+}
+
+.AvRating{
+    grid-area: AverageRating;
+    background-color:cadetblue;
+    opacity: 0.80;
+    margin: 10px;
+    padding-left: 15px;
+    color: blue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 250; 
+    border-style: solid;
+
+}
+
+.SentimentAnalysis{
+    grid-area: SentimentAnalysis; 
+    background-color:chartreuse;
+    opacity: 0.80;
+    margin: 10px;
+    padding-left: 15px;
+    color:red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 250;
+    border-style: solid;
+}
+
+.WebsiteVisitors{
+    grid-area: WebsiteVisitors; 
+    background-color:darkcyan;
+    margin: 10px;
+    opacity: 0.80;
+    padding-left: 15px;
+    color:yellow;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 250;
+    border-style: solid;
+
+}
+
+
+.btn{
+    align-items:flex-start;
+    flex-direction: column;
+    display: flex;
+    justify-content:start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+    
+}
+
+h3{
+    color:black;
+}
