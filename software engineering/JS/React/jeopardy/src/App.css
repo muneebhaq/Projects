@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  justify-content: center;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background-color: white;
+  color: red;
+  margin:0;
+}
+
+.title{
+  text-transform: capitalize;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: crimson;
+  
+}
+
+.clueData{
+  margin: top 20px;
+  margin-bottom: 20px;
+  font-size:25px;
+  font-weight:400;
+}
+
+#dec{
+  background-color:beige;
+  border-radius:12px;
+  padding:12px 28px;
+}
+
+#increase{
+  background-color: #4CAF50;
+  border-radius: 12px;
+  padding: 12px 28px;
+}
+
+#reset{
+  background-color: #555555;
+  color: white;
+  border-radius: 12px;
+  padding: 12px 28px;
+}
+
+.getclue_btn{
+  background-color: #f0c710;
+  border-radius: 12px;
+  padding: 12px 28px;
+}
+#reveal{
+  background-color: #24d1fc;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.Answer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
