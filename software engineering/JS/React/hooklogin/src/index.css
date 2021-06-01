@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.form-inner{
+    border-style: solid;
+    border-color: crimson;
+    display:block;
+    background-color: aquamarine;
+    padding:40px;
+}
+
